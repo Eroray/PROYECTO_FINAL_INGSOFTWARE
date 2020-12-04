@@ -39,6 +39,7 @@ namespace Program.Unit.Test2
             //Revisar
             Assert.Equal(d, volumenPrisma);
         } 
+        
         //Test 4
         [Theory]
         [InlineData(3,7,4,2,85)]
@@ -56,6 +57,7 @@ namespace Program.Unit.Test2
             //Revisar
             Assert.NotEqual(d, volumenPrisma);
         }
+        
         //Test 3
         [Theory]
         [InlineData(3,7,4,2,127)]
@@ -69,9 +71,9 @@ namespace Program.Unit.Test2
             //Datos
             Calculator  Cal01 =new Calculator();
             //Actuar
-            double  = (numerodeLados * basePrisma)*(apotemaPrisma+alturaPrisma);
+            double areaPrisma  = (numerodeLados * basePrisma)*(apotemaPrisma+alturaPrisma);
             //Revisar
-            Assert.NotEqual();
+            Assert.NotEqual(d, areaPrisma);
         }
     }
 }
