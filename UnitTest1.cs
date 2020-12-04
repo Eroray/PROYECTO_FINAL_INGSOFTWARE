@@ -39,5 +39,22 @@ namespace Program.Unit.Test2
             //Revisar
             Assert.Equal(d, volumenPrisma);
         }
+        //Test 3
+        [Theory]
+        [InlineData(3,7,4,2,127)]
+        [InlineData(2,3,5,8,79)]
+        [InlineData(3,4,7,3,121)]
+        [InlineData(4,5,2,9,221)]
+        [InlineData(5,5,7,8,376)]
+
+        public void Test3(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
+        {
+            //Datos
+            Calculator  Cal01 =new Calculator();
+            //Actuar
+            double  = (numerodeLados * basePrisma)*(apotemaPrisma+alturaPrisma);
+            //Revisar
+            Assert.NotEqual();
+        }
     }
 }
