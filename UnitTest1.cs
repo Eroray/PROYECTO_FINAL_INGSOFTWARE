@@ -18,7 +18,7 @@ namespace Program.Unit.Test2
             //Datos
             Calculator  Cal01 =new Calculator();
             //Actuar
-            double areaPrisma = (numerodeLados * basePrisma)*(apotemaPrisma+alturaPrisma);
+            double areaPrisma = Cal01.area(numerodeLados, Base Prisma, apotemaPrisma, altura Prisma);
             //Revisar
             Assert.Equal(d, areaPrisma);
         }
@@ -33,9 +33,9 @@ namespace Program.Unit.Test2
         public void Test2(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            Calculator  Cal01 =new Calculator();
+            Calculator  Cal02 =new Calculator();
             //Actuar
-            double volumenPrisma = (numerodeLados * basePrisma * apotemaPrisma) * 0.5 * alturaPrisma;
+            double volumenPrisma = Cal02.volumen(numerodeLados, basePrisma, apotemaPirsma, alturaPrisma);
             //Revisar
             Assert.Equal(d, volumenPrisma);
         } 
@@ -51,9 +51,9 @@ namespace Program.Unit.Test2
         public void Test4(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            Calculator  Cal01 =new Calculator();
+            Calculator  Cal03 =new Calculator();
             //Actuar
-            double volumenPrisma = (numerodeLados * basePrisma * apotemaPrisma) * 0.5 * alturaPrisma;
+            double volumenPrisma = Cal03.volumen(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
             Assert.NotEqual(d, volumenPrisma);
         }
@@ -69,9 +69,9 @@ namespace Program.Unit.Test2
         public void Test3(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            Calculator  Cal01 =new Calculator();
+            Calculator  Cal04 =new Calculator();
             //Actuar
-            double areaPrisma  = (numerodeLados * basePrisma)*(apotemaPrisma+alturaPrisma);
+            double areaPrisma  = Cal04.area(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
             Assert.NotEqual(d, areaPrisma);
         }
