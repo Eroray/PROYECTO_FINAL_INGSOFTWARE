@@ -17,7 +17,7 @@ namespace Program.Unit.Test2
         public void Test1(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            var Cal01 =new Calculator();
+            Calculator  Cal01 =new Calculator();
             //Actuar
             double areaPrisma = Cal01.area(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
@@ -34,7 +34,7 @@ namespace Program.Unit.Test2
         public void Test2(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            var Cal02 =new Calculator();
+            Calculator  Cal02 =new Calculator();
             //Actuar
             double volumenPrisma = Cal02.volumen(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
@@ -51,7 +51,7 @@ namespace Program.Unit.Test2
         public void Test3(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            var Cal03 =new Calculator();
+            Calculator  Cal03 =new Calculator();
             //Actuar
             double areaPrisma = Cal03.area(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
@@ -68,7 +68,7 @@ namespace Program.Unit.Test2
         public void Test4(double numerodeLados, double basePrisma, double apotemaPrisma, double alturaPrisma, double d) 
         {
             //Datos
-            var Cal04 =new Calculator();
+            Calculator  Cal04 =new Calculator();
             //Actuar
             double volumenPrisma = Cal04.volumen(numerodeLados, basePrisma, apotemaPrisma, alturaPrisma);
             //Revisar
